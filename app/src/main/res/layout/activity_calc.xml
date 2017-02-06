@@ -8,7 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.yonimevicio.calculadora.calc">
+    tools:context="com.example.yonimevicio.calculadora.Calc">
+
+
 <TableLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -147,15 +149,29 @@
             android:layout_height="match_parent"
             android:text="."/>
         <Button
-            android:layout_weight="6"
+            android:layout_weight="3"
+            android:id="@+id/ans"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="ANS"/>
+        <Button
+            android:layout_weight="3"
             android:id="@+id/igual"
             android:layout_marginTop="10dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:text="="/>
     </TableRow>
+    <TableRow >
+        <ImageView
+            android:id="@+id/llamar"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/call"
+            />
+    </TableRow>
 </TableLayout>
-
-
 
 </RelativeLayout>

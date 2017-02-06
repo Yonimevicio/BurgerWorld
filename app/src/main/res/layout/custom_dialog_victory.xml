@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="8"
+    android:background="@color/colorDialog">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title_victory"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lvl_dialog_text"
+        android:text="@string/victory_text"/>
+    <ImageView
+        android:id="@+id/img_victory"
+        android:src="@mipmap/victory"
+        android:layout_below="@id/title_victory"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+         />
+    <Button
+        android:id="@+id/btn_victory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/img_victory"
+        android:layout_alignRight="@id/img_victory"
+        android:layout_below="@id/img_victory"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_game_ok"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lvl_dialog_text" />
+</RelativeLayout>

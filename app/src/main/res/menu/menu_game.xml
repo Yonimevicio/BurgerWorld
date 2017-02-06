@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ranking_button"
+            android:title=""
+            android:icon="@mipmap/ranking"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/restart_game_button"
+            android:title=""
+            android:icon="@mipmap/reset"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/lvl_button"
+            android:title=""
+            android:icon="@mipmap/lvl"
+            app:showAsAction="ifRoom"/>
+    </group>
+</menu>
