@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yonimevicio.calculadora">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Calc"
+            android:label="Burger Calculator"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Base_activity" />
+        <activity
+            android:name=".Login_activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Juego"
+            android:label="BG 4x4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Juego6x6"
+            android:label="BG 6x6"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Inicio" />
+        <activity
+            android:name=".MusicPlayer"
+            android:label="Burger Player"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Ranking"
+            android:label="Ranking 4x4"/>
+        <activity
+            android:name=".Ranking6x6"
+            android:label="Ranking 6x6"/>
+    </application>
+
+</manifest>
